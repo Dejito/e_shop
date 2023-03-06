@@ -43,11 +43,12 @@ class Products with ChangeNotifier {
     // ),
   ];
   final String authToken;
+  final String? gitTest;
   final List? previousItems;
   final String userId;
 
 
-  Products(this.authToken, this.previousItems, this.userId);
+  Products(this.authToken, this.previousItems, this.userId, this.gitTest);
 
   List<Product> get items {
     return [..._items];
